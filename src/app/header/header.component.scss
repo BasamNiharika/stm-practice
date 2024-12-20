@@ -1,0 +1,59 @@
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(13, 13, 70);
+    color: white;
+    padding: 5px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
+  
+  /* Menu icon styling */
+  .menu-icon {
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 24px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    padding-left: 10px;
+    text-align: left;
+  }
+  
+  /* Profile section styling */
+  .profile {
+    display: flex;
+    padding:10px 50px;
+    align-items: left;
+
+  }
+  
+  /* Profile icon styling */
+  .profile-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 100px;
+  }
+  
+  /* Profile button styling */
+  .profile-button {
+    background-color: #30487a;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    // padding-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .profile-button:hover {
+    background-color: #555;
+  }
+  

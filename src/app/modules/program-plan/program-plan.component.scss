@@ -1,0 +1,57 @@
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#topicsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.topic input, .topic label {
+    margin-bottom: 5px;
+}
+
+.topic button {
+    align-self: flex-start;
+    padding: 8px;
+    font-size: 16px;
+}

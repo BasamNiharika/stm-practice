@@ -1,0 +1,49 @@
+/* Header styling */
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #858bd3;
+    color:white;
+    text-align: center;
+    line-height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  /* The side navigation menu */
+  .sidenav {
+    height: calc(100% - 60px); /* Adjust height to account for header */
+    width: 200px;
+    position: fixed;
+    top: 50px; /* Position below the header */
+    left: 0;
+    background-color: white;
+    padding-top: 20px;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  /* Side navigation links */
+  .sidenav a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* Change color on hover */
+  .sidenav a:hover {
+    background-color: rgb(13, 13, 70);;
+  }
+  
+  /* Main content */
+  .main-content {
+    margin-left: 260px;
+    padding: 20px;
+    margin-top: 60px; /* Adjust margin to account for header */
+  }
+  

@@ -1,0 +1,120 @@
+<form [formGroup]="ModuleForm" (ngSubmit)="sendrequest()">
+    <div>
+        <label>Module Name</label>
+        <input type="text" [(ngModel)]="modulename" formControlName="modulename">
+        <div *ngIf="ModuleForm.get('modulename')?.invalid && ModuleForm.get('modulename')?.touched">
+            Modulename is required.
+        </div>
+    </div>
+    <div>
+        <label>Topic Name</label>
+        <input type="text" [(ngModel)]="topicname" formControlName="topicname">
+    </div>
+
+    <div>
+        <label>Start Date</label>
+        <input type="date" [(ngModel)]="startdate" formControlName="startdate">
+    </div>
+
+    <div>
+        <label>End Date</label>
+        <input type="date" [(ngModel)]="enddate" formControlName="enddate">
+    </div>
+
+    <div>
+        <label>Mode</label>
+        <select v-model="topic.trainingMode" [(ngModel)]="mode" formControlName="mode" required>
+            <option value="Online">Online</option>
+            <option value="Offline">Offline</option>
+        </select>
+    </div>
+    <div>
+        <label>Trainer Name</label>
+        <input type="text" [(ngModel)]="trainername" formControlName="trainername">
+    </div>
+
+    <div>
+        <label for="status">Status:</label>
+            <select id="status" name="status" [(ngModel)]="status" formControlName="status"required>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+                <option value="completed">Completed</option>
+            </select>
+    </div>
+    <button type="submit" [disabled]="ModuleForm.invalid">Submit</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    <form id="programPlanForm" (ngSubmit)="onSubmit()">
+        <div>
+            <label for="moduleName">Module Name:</label>
+            <input type="text" id="moduleName" formControlName="name"  placeholder="Module Name" required>
+        </div>
+
+        <div>
+            <label for="topics">Topics:</label>
+            <div id="topicsContainer">
+                <div class="topic">
+                    <input type="text" name="topicName" formControlName="topicname" [ngModelOptions]= "{standalone: true}"placeholder="Topic Name" required>
+                    <div>
+                        <label>Start Date</label>
+                        <input type="datetime-local" name="startTime" formControlName="startdate" placeholder="Start Time" required>
+                    </div>
+                    <div>
+                        <label>End Date</label>
+                    <input type="datetime-local" name="endTime"[(ngModel)]="enddate" placeholder="End Time" required>
+                    </div>
+                    <label>Training Mode:</label>
+                    <div>
+                    <select v-model="topic.trainingMode" [(ngModel)]="mode" required>
+                        <option value="Online">Online</option>
+                        <option value="Offline">Offline</option>
+                    </select></div>
+                    <div>
+                    <label>Trainer Name</label>
+                    <input type="text" name="trainer" [(ngModel)]="trainername" placeholder="Trainer name">
+                    </div>
+                    <button type="button" onclick="addTopic()">+</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <label for="status">Status:</label>
+            <select id="status" name="status" [(ngModel)]="status"required>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+                <option value="completed">Completed</option>
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+    </form> -->
